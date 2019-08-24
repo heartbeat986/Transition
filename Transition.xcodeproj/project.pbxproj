@@ -15,6 +15,10 @@
 		1089875523111491004483E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089875423111491004483E9 /* main.m */; };
 		1089875F23111492004483E9 /* TransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089875E23111492004483E9 /* TransitionTests.m */; };
 		1089876A23111492004483E9 /* TransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089876923111492004483E9 /* TransitionUITests.m */; };
+		1089877923111EA3004483E9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089877823111EA3004483E9 /* SecondViewController.m */; };
+		1089877C23112018004483E9 /* PresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089877B23112018004483E9 /* PresentTransition.m */; };
+		1089877F231125C4004483E9 /* DismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089877E231125C4004483E9 /* DismissTransition.m */; };
+		1089878223112DCE004483E9 /* InteractTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089878123112DCE004483E9 /* InteractTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		1089876523111492004483E9 /* TransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1089876923111492004483E9 /* TransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionUITests.m; sourceTree = "<group>"; };
 		1089876B23111492004483E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1089877723111EA3004483E9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1089877823111EA3004483E9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1089877A23112018004483E9 /* PresentTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentTransition.h; sourceTree = "<group>"; };
+		1089877B23112018004483E9 /* PresentTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentTransition.m; sourceTree = "<group>"; };
+		1089877D231125C4004483E9 /* DismissTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissTransition.h; sourceTree = "<group>"; };
+		1089877E231125C4004483E9 /* DismissTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DismissTransition.m; sourceTree = "<group>"; };
+		1089878023112DCE004483E9 /* InteractTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractTransition.h; sourceTree = "<group>"; };
+		1089878123112DCE004483E9 /* InteractTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,14 @@
 				1089875023111491004483E9 /* LaunchScreen.storyboard */,
 				1089875323111491004483E9 /* Info.plist */,
 				1089875423111491004483E9 /* main.m */,
+				1089877723111EA3004483E9 /* SecondViewController.h */,
+				1089877823111EA3004483E9 /* SecondViewController.m */,
+				1089877A23112018004483E9 /* PresentTransition.h */,
+				1089877B23112018004483E9 /* PresentTransition.m */,
+				1089877D231125C4004483E9 /* DismissTransition.h */,
+				1089877E231125C4004483E9 /* DismissTransition.m */,
+				1089878023112DCE004483E9 /* InteractTransition.h */,
+				1089878123112DCE004483E9 /* InteractTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -262,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1089877923111EA3004483E9 /* SecondViewController.m in Sources */,
 				1089874A2311146C004483E9 /* ViewController.m in Sources */,
 				1089875523111491004483E9 /* main.m in Sources */,
+				1089877F231125C4004483E9 /* DismissTransition.m in Sources */,
 				108987472311146C004483E9 /* AppDelegate.m in Sources */,
+				1089877C23112018004483E9 /* PresentTransition.m in Sources */,
+				1089878223112DCE004483E9 /* InteractTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8DSQ35587;
 				INFOPLIST_FILE = Transition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8DSQ35587;
 				INFOPLIST_FILE = Transition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
